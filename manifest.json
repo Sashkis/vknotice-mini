@@ -1,0 +1,36 @@
+ {
+	"manifest_version": 2,
+	"name": "Информер Вконтакте mini",
+	"description": "Урезанная версия информера Вконтакте",
+	"short_name": "Vk notice mini",
+	"version": "1.0",
+
+	"homepage_url": "https://vk.com/club90041499",
+	"author": "Александр Козак",
+	"developer": {
+		"name": "Александр Козак",
+		"url": "https://vk.com/id45421694"
+	},
+
+	"icons": {
+		"128": "img/icon128.png"
+	},
+
+	"background": {
+		"scripts": ["jquery.min.js", "background.js"]
+	},
+	"browser_action": {
+		"default_icon": "img/icon38-off.png",
+		"default_popup": "popup/popup.html"
+	},
+
+	"permissions": [
+		"*://vk.com/",
+		"*://vk.com/*",
+		"*://*.vk.com/*",
+		"background",
+		"storage",
+		"tabs"
+	],
+	"incognito": "split"
+}
