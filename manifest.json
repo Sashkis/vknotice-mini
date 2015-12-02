@@ -3,7 +3,7 @@
 	"name": "Информер Вконтакте mini",
 	"description": "Урезанная версия информера Вконтакте",
 	"short_name": "Vk notice mini",
-	"version": "1.0",
+	"version": "1.1",
 
 	"homepage_url": "https://vk.com/club90041499",
 	"author": "Александр Козак",
@@ -28,9 +28,6 @@
 		"*://vk.com/",
 		"*://vk.com/*",
 		"*://*.vk.com/*",
-		"background",
-		"storage",
-		"tabs"
-	],
-	"incognito": "split"
+		"storage"
+	]
 }
